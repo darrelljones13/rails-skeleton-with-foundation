@@ -1,8 +1,8 @@
 rails-skeleton-with-foundation
 ==============================
 
-skeleton is ready to go with
-----------------------------
+##skeleton is ready to go with:
+
 
 * bcrypt and basic user authentication
 
