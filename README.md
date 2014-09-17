@@ -10,4 +10,4 @@ rails-skeleton-with-foundation
 
 * debugger
 
-* foundation
+* [foundation](http://foundation.zurb.com/)
