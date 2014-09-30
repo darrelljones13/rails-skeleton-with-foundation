@@ -15,5 +15,346 @@
  *= require_self
  */
 
-@import "foundation_and_overrides";
+/*@import "foundation_and_overrides";*/
 /* Add imports of custom sass/scss files here */
+
+
+
+.home {
+  font-family: 'Josefin Slab', serif;
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  overflow: hidden;
+}
+
+.home-container {
+  width: 1500px;
+  height: 700px;
+  overflow: hidden;
+  background-image: url('background-large.png');
+  background-size: 100%;
+  background-color: #0E1328;
+}
+
+.home-container h2 {
+  position: absolute;
+  top: 10%;
+  font-family: 'Josefin Slab', serif;
+  font-size: 3em;
+  color: #F5F5F5;
+  left: 3%;
+  width: 400px;
+}
+
+.home-container .sun {
+  position: fixed;
+  right: 0;
+  top: 30%;
+  /*overflow: hidden;*/
+}
+
+.text-container {
+  position: absolute;
+  top: 20%;
+  padding: 50px;
+  border: 2px;
+  border-radius: 10px;
+  width: 25%; 
+  color: #F5F5F5;
+}
+
+.text-container p {
+  font-family: 'Monda', sans-serif;
+  font-size: 20px;
+}
+
+
+.orange {
+  position: absolute;
+  top: 2%;
+  left: 80%;
+}
+
+.orange img {
+  height: 90%;
+  width: 90%;
+}
+
+.orange img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=40);
+  -webkit-transition:all 0.2s ease-in-out;
+  -moz-transition:all 0.2s ease-in-out;
+  -o-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+}
+
+.crater {
+  position: absolute;
+  top: 82%;
+  left: 27%;
+}
+
+.crater img {
+  height: 50%;
+  width: 50%;
+}
+
+.crater img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=40);
+  -webkit-transition:all 0.2s ease-in-out;
+  -moz-transition:all 0.2s ease-in-out;
+  -o-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+}
+
+.greeny {
+  position: absolute;
+  top: 12%;
+  left: 74%;
+}
+
+.greeny img {
+  height: 100%;
+  width: 100%;
+}
+
+.greeny img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=40);
+  -webkit-transition:all 0.2s ease-in-out;
+  -moz-transition:all 0.2s ease-in-out;
+  -o-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+}
+
+.pale-yellow {
+  position: absolute;
+  top: 45%;
+  left: 44%;
+}
+
+.pale-yellow img {
+  height: 70%;
+  width: 70%;
+}
+
+.pale-yellow img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=40);
+  -webkit-transition:all 0.2s ease-in-out;
+  -moz-transition:all 0.2s ease-in-out;
+  -o-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+}
+
+.pink {
+  position: absolute;
+  top: 90%;
+  left: 45%;
+}
+
+.pink img {
+  height: 50%;
+  width: 50%;
+}
+
+.purple-spot {
+  position: absolute;
+  top: 76%;
+  left: 35%;
+}
+
+.purple-spot img {
+  height: 100%;
+  width: 100%;
+}
+
+.purple-spot img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=40);
+  -webkit-transition:all 0.2s ease-in-out;
+  -moz-transition:all 0.2s ease-in-out;
+  -o-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+}
+
+.red {
+  position: absolute;
+  top: 50%;
+  left: 39%;
+}
+
+.red img {
+  height: 80%;
+  width: 80%;
+}
+
+.red img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=40);
+  -webkit-transition:all 0.2s ease-in-out;
+  -moz-transition:all 0.2s ease-in-out;
+  -o-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+}
+
+.rings {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+
+.rings img {
+  height: 90%;
+  width: 90%;
+}
+
+.rings img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=40);
+  -webkit-transition:all 0.2s ease-in-out;
+  -moz-transition:all 0.2s ease-in-out;
+  -o-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+}
+
+.small-orange {
+  position: absolute;
+  top: 5%;
+  left: 59%;
+}
+
+.small-orange img {
+  height: 100%;
+  width: 100%;
+}
+
+.lime {
+  position: absolute;
+  top: 13%;
+  left: 52%;
+}
+
+.lime img {
+  height: 90%;
+  width: 90%;
+}
+
+.lime img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=40);
+  -webkit-transition:all 0.2s ease-in-out;
+  -moz-transition:all 0.2s ease-in-out;
+  -o-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+}
+
+.two-tone {
+  position: absolute;
+  top: 14%;
+  left: 56%;
+  height: 130px;
+  width: 130px;
+}
+
+.two-tone img {
+  height: 100%;
+  width: 100%;
+}
+
+.two-tone img:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=40);
+  -webkit-transition:all 0.2s ease-in-out;
+  -moz-transition:all 0.2s ease-in-out;
+  -o-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+}
+
+.jamsession {
+  display: none;
+  position: fixed;
+  right: 100px;
+  top: 43%;
+  width: 500px;
+}
+
+.jamsession img {
+  padding-left: 20%;
+  padding-bottom: 5%;
+}
+
+.jamsession p {
+  font-family: 'Monda', sans-serif;
+  text-align: left;
+  font-size: 20px; 
+  color: #0E1328;
+}
+
+.treefrog {
+  display: none;
+  position: fixed;
+  right: 100px;
+  top: 39%;
+  width: 500px;
+}
+
+.treefrog img {
+  padding-left: 20%;
+  padding-bottom: 5%;
+  width: 64%;
+  height: 64%;
+}
+
+.treefrog p {
+  font-family: 'Monda', sans-serif;
+  text-align: left;
+  font-size: 16px; 
+  color: #0E1328;
+}
+
+.chairs {
+  display: none;
+  position: fixed;
+  right: 100px;
+  top: 39%;
+  width: 500px;
+}
+
+.chairs img {
+  padding-left: 20%;
+  padding-bottom: 5%;
+  width: 70%;
+  height: 70%;
+}
+
+.chairs p {
+  font-family: 'Monda', sans-serif;
+  text-align: left;
+  font-size: 18px; 
+  color: #0E1328;
+}
+
+.archduke {
+  display: none;
+  position: fixed;
+  right: 100px;
+  top: 39%;
+  width: 500px;
+}
+
+.archduke img {
+  padding-left: 20%;
+  padding-bottom: 5%;
+  width: 70%;
+  height: 70%;
+}
+
+.archduke p {
+  font-family: 'Monda', sans-serif;
+  text-align: left;
+  font-size: 20px; 
+  color: #0E1328;
+}

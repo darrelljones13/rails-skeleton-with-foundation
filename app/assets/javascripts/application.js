@@ -16,8 +16,39 @@
 //= require turbolinks
 //= require_tree .
 
-$(function(){ 
+// $(function(){ 
 
-	$(document).foundation(); 
+//	$(document).foundation(); 
+
+// });
+
+$(document).ready(function() {
+  $('.two-tone img').on('mouseenter', function() {
+    $('.jamsession').fadeIn("slow");
+  });
+  $('.two-tone img').on('mouseleave', function() {
+    $('.jamsession').fadeOut("slow");
+  });
+
+    $('.rings img').on('mouseenter', function() {
+    $('.treefrog').fadeIn("slow");
+  });
+  $('.rings img').on('mouseleave', function() {
+    $('.treefrog').fadeOut("slow");
+  });
+
+    $('.red img').on('mouseenter', function() {
+    $('.chairs').fadeIn("slow");
+  });
+  $('.red img').on('mouseleave', function() {
+    $('.chairs').fadeOut("slow");
+  });
+
+   $('.purple-spot img').on('mouseenter', function() {
+    $('.archduke').fadeIn("slow");
+  });
+  $('.purple-spot img').on('mouseleave', function() {
+    $('.archduke').fadeOut("slow");
+  });
 
 });

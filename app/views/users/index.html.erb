@@ -1,7 +1,81 @@
-<h1>User Login</h1>
+<div class="home">
+  <div class="home-container">
 
-<%= render 'login' %>
+    <div class="sun">
+      <%= image_tag("sun.png") %>
+    </div>
 
-<br>
+    <h2>Darrell Jones</h2>
 
-<%= link_to 'New User', new_user_path %>
+    <div class="text-container">
+      <p>As a teacher trainer and educator, I've been able to help fuel a passion for learning in students and educators. I would never have been an effective educator if I didn't share that same passion.</p>
+
+     <!--  <p>I have always been a lifelong learner and tinkerer, which has led me to the realm of web development. It provides an opportunity to pursue knowledge learning new languages, libraries, and frameworks. I'm excited to pursue a career in software engineering because I tend to thrive in collaborative environments. The excitement centered around building something as a group is difficult to replicate in other fields.</p> -->
+    </div>
+
+    <div class="crater">
+    <%= link_to(image_tag("crater.png"), "/rogers-park") %>
+    </div>
+
+    <div class="greeny">
+    <%= link_to(image_tag("green.png"), "/bucktown") %>
+    </div>
+
+    <div class="lime">
+      <%= link_to(image_tag("lime.png"), "/south-loop") %>
+    </div>
+
+    <div class="orange">
+      <%= link_to(image_tag("orange.png"), "/lakeview") %>
+    </div>
+
+    <div class="pale-yellow">
+      <%= link_to(image_tag("pale-yellow.png"), "/hyde-park") %>
+    </div>
+
+    <div class="pink">
+      <%= link_to(image_tag("pink.png"), "/river-north") %>
+    </div>
+
+    <div class="purple-spot">
+      <%= link_to(image_tag("purple-spot.png"), "http://www.cyrus-designs.com/archduke") %>
+    </div>
+
+    <div class="archduke">
+      <div><%= image_tag("archduke.png") %></div>
+      <p>A painting of paintings!? Explore one of the earliest known documented art galleries, its collector, its collection, its artists, and the unique story of its curator.</p>
+    </div>
+
+    <div class="red">
+      <%= link_to(image_tag("red.png"),"http://www.cyrus-designs.com/chairs", :target => "_blank") %>
+    </div>
+
+    <div class="chairs">
+      <div><%= image_tag("chairs.png") %></div>
+      <p>A Visual Guide to the Modern Chair</p>
+      <p>Have a Seat is an interactive learning tool created for with a curiousity for design history.  Chairs have an interesting role in society.They certainly serve a functional purpose, but also provide aesthetic value. Explore ten influential designs and learn about their creators.</p>
+    </div>
+
+    <div class="rings">
+      <%= link_to(image_tag("rings.png"), "http://treefrog.herokuapp.com/", :target => "_blank") %>
+    </div>
+
+    <div class="treefrog">
+      <div><%= image_tag("treefrog-logo.png") %></div>
+      <p>TreeFrog is an educational and exploratory tool that portrays the vastness of the animal kingdom and visually traverses the relationships between animals through their taxonomy. Users can interactively explore the various connections between members of the animal kingdom via dynamic data visualization. By providing data about each creature's environment, characteristics, and endangerment status, TreeFrog aims to inspire respect for the rich variety of the natural world.</p>
+    </div>
+
+    <div class="small-orange">
+      <%= link_to(image_tag("small-orange.png"), "/river-north") %>
+    </div>
+
+    <div class="two-tone">
+      <%= link_to(image_tag("two-tone.png"), "http://jam-session.herokuapp.com/", :target => "_blank") %>
+    </div>
+
+    <div class="jamsession">
+      <div><%= image_tag("jamsession-logo.png") %></div>
+      <p>Jam Session is a social networking app that allows musicians to find other musicians in Chicago to jam with. Musicians can seek out other musicians in their neighborhood by instrument type and skill level and send an internal message to request a meet up.</p>
+    </div>
+  </div>
+</div>

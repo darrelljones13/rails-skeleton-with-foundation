@@ -14,26 +14,26 @@ class UsersController < ApplicationController
   def edit
   end
 
-  def create
-    @user = User.new(user_params)
-    if @user.save
-      flash.notice = "User was successfully created."
-      redirect_to root_path
-    else
-      flash.notice = "Try again."
-      render :new
-    end
-  end
+  # def create
+  #   @user = User.new(user_params)
+  #   if @user.save
+  #     flash.notice = "User was successfully created."
+  #     redirect_to root_path
+  #   else
+  #     flash.notice = "Try again."
+  #     render :new
+  #   end
+  # end
 
-  def update
-    if current_user.update(user_params)
-      flash.notice = 'User was successfully updated.'
-      redirect_to user_path(@user)
-    else
-      flash.notice = "Try again."
-      render :edit
-    end
-  end
+  # def update
+  #   if current_user.update(user_params)
+  #     flash.notice = 'User was successfully updated.'
+  #     redirect_to user_path(@user)
+  #   else
+  #     flash.notice = "Try again."
+  #     render :edit
+  #   end
+  # end
 
   # def destroy
   #   @user.destroy
