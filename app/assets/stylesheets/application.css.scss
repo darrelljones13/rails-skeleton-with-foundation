@@ -11,34 +11,46 @@
  * file per style scope.
  *
  *= require foundation
+ *= require owl.theme
+ *= require slick
  *= require_tree .
  *= require_self
+ *= require owl.carousel
  */
 
 /*@import "foundation_and_overrides";*/
 /* Add imports of custom sass/scss files here */
-
-
 
 .home {
   font-family: 'Josefin Slab', serif;
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
   overflow: hidden;
+  background-size: 100%;
 }
 
 .home-container {
   width: 1500px;
-  height: 700px;
+  height: 800px;
   overflow: hidden;
   background-image: url('background-large.png');
   background-size: 100%;
   background-color: #0E1328;
 }
+/*
+#owl-demo .item {
+  margin: 3px;
+}
+
+#owl-demo .item img {
+  display: block;
+  width: 80%;
+  height: auto;
+}*/
 
 .home-container h2 {
   position: absolute;
-  top: 10%;
+  top: 6%;
   font-family: 'Josefin Slab', serif;
   font-size: 3em;
   color: #F5F5F5;
@@ -55,17 +67,17 @@
 
 .text-container {
   position: absolute;
-  top: 20%;
+  top: 14%;
   padding: 50px;
   border: 2px;
   border-radius: 10px;
-  width: 25%; 
+  width: 28%; 
   color: #F5F5F5;
 }
 
 .text-container p {
   font-family: 'Monda', sans-serif;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 
@@ -89,6 +101,28 @@
   transition:all 0.2s ease-in-out;
 }
 
+.art {
+  display: none;
+  position: fixed;
+  right: 100px;
+  top: 39%;
+  width: 500px;
+}
+
+.art img {
+  padding-left: 18%;
+  padding-bottom: 5%;
+  width: 80%;
+  height: 80%;
+}
+
+.art p {
+  font-family: 'Monda', sans-serif;
+  text-align: center;
+  font-size: 40px; 
+  color: #0E1328;
+}
+
 .crater {
   position: absolute;
   top: 82%;
@@ -107,6 +141,28 @@
   -moz-transition:all 0.2s ease-in-out;
   -o-transition:all 0.2s ease-in-out;
   transition:all 0.2s ease-in-out;
+}
+
+.resume {
+  display: none;
+  position: fixed;
+  right: 100px;
+  top: 39%;
+  width: 500px;
+}
+
+.resume img {
+  padding-left: 38%;
+  padding-bottom: 5%;
+  width: 64%;
+  height: 64%;
+}
+
+.resume p {
+  font-family: 'Monda', sans-serif;
+  text-align: center;
+  font-size: 40px; 
+  color: #0E1328;
 }
 
 .greeny {
@@ -229,6 +285,30 @@
 .small-orange img {
   height: 100%;
   width: 100%;
+}
+
+.small-orange:hover {
+  opacity: 0.5;
+  filter: alpha(opacity=40);
+  -webkit-transition:all 0.2s ease-in-out;
+  -moz-transition:all 0.2s ease-in-out;
+  -o-transition:all 0.2s ease-in-out;
+  transition:all 0.2s ease-in-out;
+}
+
+.contact {
+  display: none;
+  position: fixed;
+  right: 100px;
+  top: 39%;
+  width: 500px;
+}
+
+.contact p {
+  font-family: 'Monda', sans-serif;
+  text-align: center;
+  font-size: 40px; 
+  color: #0E1328;
 }
 
 .lime {
@@ -358,3 +438,185 @@
   font-size: 20px; 
   color: #0E1328;
 }
+
+.pairs {
+  display: none;
+  position: fixed;
+  right: 100px;
+  top: 39%;
+  width: 500px;
+}
+
+.pairs img {
+  padding-left: 20%;
+  padding-bottom: 5%;
+  width: 70%;
+  height: 70%;
+}
+
+.pairs p {
+  font-family: 'Monda', sans-serif;
+  text-align: left;
+  font-size: 20px; 
+  color: #0E1328;
+}
+
+
+/* Carousel */
+
+.owl-theme .owl-controls{
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;/*IE7 life-saver */
+  margin: 55px;
+  padding: 10px 10px;
+  font-size: 42px;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  border-radius: 10%;
+/*  background: #869791;*/
+  filter: Alpha(Opacity=50);/*IE7 fix*/
+  opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+  filter: Alpha(Opacity=100);/*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+  display: inline-block;
+  zoom: 1;
+  *display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=50);/*IE7 fix*/
+  opacity: 0.5;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background: #869791;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+  filter: Alpha(Opacity=100);/*IE7 fix*/
+  opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center
+}
+
+#owl-demo .owl-item > div img {
+    display: block;
+    width: 80%;
+    height: auto;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom:4px;
+}
+
+#owl-demo .owl-item > div{
+  /*background : #42bdc2;*/
+  left: 20px;
+  padding: 0px 30px;
+  margin:3px;
+  color: white;
+  font-size:22px;
+  border:1px white;
+}
+
+.wrapper-with-margin{
+  margin:100px 0px;
+}
+
+ 
+.owl-theme .owl-controls .owl-buttons div {
+  position: absolute;
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+  left: 0%;
+  top: 75px; 
+}
+ 
+.owl-theme .owl-controls .owl-buttons .owl-next{
+  right: 1%;
+  top: 75px;
+}
+
+.design {
+  font-family: 'Monda', sans-serif;
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  overflow: hidden;
+  background-color: #0C1528;
+  background-size: 100%;
+}
+
+.design-container {
+width: 1500px;
+  height: 800px;
+  overflow: hidden;
+  /*background-image: url('background-large.png');*/
+ /* background-size: 100%;*/
+  background-color: #0C1528;
+}
+
+
+.header-container {
+  height: 20px;
+}
+
+.header-container h1 {
+  font-family: 'Josefin Slab', serif;
+  color: #FFF;
+  padding-left: 30px;
+  top: 1%;
+  font-size: 42px;
+}
+
+
+.header-container img {
+  display: block;
+  width: 100%;
+  opacity: 0.3;
+  height: auto;
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+
